@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 
-function NavigationBar(){
+function NavigationBar(props){
     return(
         <div>
         <Container>
             <Navbar bg='dark' variant='dark'>
-            <Navbar.Brand href='#home'>Home</Navbar.Brand>
+            <Navbar.Brand href='#home'>{props.caption}</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav'/>
             <Navbar.Collapse>
                 <Nav className='me-auto'>
